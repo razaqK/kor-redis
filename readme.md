@@ -6,14 +6,14 @@ The `kor-redis` library exported as ```NodeJS``` module.
 Using npm
 ```
    $ npm i npm
-   $ npm i --save redis-util
+   $ npm i --save kor-redis
 ```
 
 In NodeJS
 
 ```
 // Load pmodule
-const Redis = require('redis-util');
+const Redis = require('kor-redis');
 const redis = new Redis('host', 'port', 'db');
 
 // setting value. Note value can be an object, an array, string or number

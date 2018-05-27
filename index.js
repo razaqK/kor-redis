@@ -17,6 +17,9 @@ class Redis {
     }
 
     set(key, value, ttl) {
+        if (value instanceof Object || value instanceof Array) {
+            value = JSON.stringify(value)
+        }
         this.client.set(key, value);
 
         if (ttl) {
@@ -28,10 +31,15 @@ class Redis {
         return new Promise((resolve, reject) => {
             this.client.get(key, function (err, data) {
                 if (!err && data) {
-                    return reject(data);
+                    try {
+                        return resolve(JSON.parse(data))
+                    }
+                    catch (error) {
+                        return resolve(data);
+                    }
                 }
 
-                return resolve(false);
+                return reject(false);
             });
         })
     }

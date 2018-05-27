@@ -1,4 +1,4 @@
-The `redis_util` library exported as ```NodeJS``` module.
+The `kor-redis` library exported as ```NodeJS``` module.
 
 
 # Installation

@@ -1,7 +1,7 @@
 {
   "name": "kor-redis",
   "version": "1.0.0",
-  "description": "This module is to make redis setup easily. By giving both sync funtionality ",
+  "description": "This module is to make redis setup easy. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

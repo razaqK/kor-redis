@@ -1,0 +1,21 @@
+{
+  "name": "redis-util",
+  "version": "1.0.0",
+  "description": "This module is to make redis setup easily. By giving both sync funtionality ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redis",
+    "cli",
+    "util"
+  ],
+  "author": "Razaq <abdrkasali@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^2.8.0",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  }
+}

@@ -11,6 +11,10 @@
     "cli",
     "util"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:razaqK/redis_util.git"
+  },
   "author": "Razaq <abdrkasali@gmail.com>",
   "license": "ISC",
   "dependencies": {

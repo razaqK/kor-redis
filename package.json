@@ -1,6 +1,6 @@
 {
   "name": "kor-redis",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This module is to make redis setup easy. ",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
   "keywords": [
     "redis",
     "cli",
-    "util"
+    "util",
+    "promise",
+    "no callback"
   ],
   "repository": {
     "type": "git",
@@ -18,8 +20,6 @@
   "author": "Razaq <abdrkasali@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "redis": "^2.8.0",
-    "to": "^0.2.9",
-    "update": "^0.7.4"
+    "redis": "^2.8.0"
   }
 }

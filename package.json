@@ -1,6 +1,6 @@
 {
   "name": "kor-redis",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This module is to make redis setup easy. ",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "redis",
     "cli",
     "util",
+    "cache",
     "promise",
     "no callback"
   ],

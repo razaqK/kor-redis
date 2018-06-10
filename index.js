@@ -39,7 +39,7 @@ class Redis {
                     }
                 }
 
-                return reject(false);
+                return resolve(false);
             });
         })
     }

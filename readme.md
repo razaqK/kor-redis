@@ -2,8 +2,6 @@ The `kor-redis` library exported as ```NodeJS``` module.
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
 
 # Installation
 
@@ -46,3 +44,8 @@ redis.delAll()
 ```
 
 See the [package source](https://github.com/razaqK/kor-redis) for more detail.
+
+[npm-image]: https://img.shields.io/npm/v/kor-redis.svg
+[npm-url]: https://npmjs.org/package/kor-redis
+[downloads-image]: https://img.shields.io/npm/dm/kor-redis.svg
+[downloads-url]: https://npmjs.org/package/kor-redis

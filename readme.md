@@ -1,9 +1,15 @@
 The `kor-redis` library exported as ```NodeJS``` module.
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][coveralls-image]][coveralls-url]
 
 # Installation
 
-Using npm
+This is a [Node.js](https://nodejs.org/en/) module available through the
+[npm registry](https://www.npmjs.com/). Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 ```
    $ npm i npm
    $ npm i --save kor-redis
@@ -39,4 +45,4 @@ redis.del(key)
 redis.delAll()
 ```
 
-See the [package source](https://github.com/razaqK/redis_util) for more detail.
+See the [package source](https://github.com/razaqK/kor-redis) for more detail.

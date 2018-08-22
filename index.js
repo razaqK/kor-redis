@@ -77,39 +77,6 @@ Redis.prototype.getKeys = async function () {
     })
 };
 
-Redis.prototype.publish = function (channel, message) {
-    message = _stringifyIfJson.call(this, message)
-    this.client.publish(channel, message);
-};
-
-Redis.prototype.on = async function () {
-    return await new Promise((resolve, reject) => {
-        this.client.on('message', function (channel, message) {
-            try {
-                resolve(JSON.parse(message))
-            } catch (e) {
-                resolve(false)
-            }
-        });
-    })
-};
-
-Redis.prototype.subscribe = async function (channel, host, port) {
-    return await new Promise((resolve, reject) => {
-        let client = redis.createClient(port, host)
-
-        client.on('message', function (channel, message) {
-            try {
-                resolve(JSON.parse(message))
-            } catch (e) {
-                resolve(false)
-            }
-        });
-
-        client.subscribe(channel);
-    })
-};
-
 /**
  * @description get the remaining expiration of a key in seconds
  * @param key

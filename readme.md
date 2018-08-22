@@ -13,7 +13,13 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
    $ npm i --save kor-redis
 ```
 
-In NodeJS
+### New Features
+- Get remaining expiration time if set on key
+- Extend expiration time
+- Remove expiration (persist the redis key)
+- Rename redis key
+
+### Usage: In NodeJS
 
 ```
 // Load pmodule
@@ -39,8 +45,28 @@ redis.getKeys().then(keys => {
 // delete key in redis
 redis.del(key)
 
-// delet all keys in redis
+// delete all keys in redis
 redis.delAll()
+
+// set new (if no expiration time) or increase the expiration time on a key 
+redis.setExpiryTime(key, 5).then(res => {
+    console.log(res)
+})
+
+// check the remain expiration on a key
+redis.remainExpiryTimeInSeconds(key).then(res => {
+    console.log(res)
+})
+
+// remove expiration from a key
+redis.persist(key).then(res => {
+    console.log(res)
+})
+
+// rename a redis key to new one
+redis.renameKey(key, newKey).then(res => {
+    console.log(res)
+})
 ```
 
 See the [package source](https://github.com/razaqK/kor-redis) for more detail.

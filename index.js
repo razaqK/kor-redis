@@ -4,7 +4,6 @@ function _createClient(port, host) {
     this.client = redis.createClient(port, host)
 }
 
-
 function _select(db) {
     this.client.select(db)
 }
@@ -16,7 +15,6 @@ function _stringifyIfJson(value) {
 
     return value;
 }
-
 
 class Redis {
     constructor(host, port, db) {

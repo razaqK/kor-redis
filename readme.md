@@ -77,4 +77,4 @@ See the [package source](https://github.com/razaqK/kor-redis) for more detail.
 [downloads-image]: https://img.shields.io/npm/dm/kor-redis.svg
 [downloads-url]: https://npmjs.org/package/kor-redis
 [travis-url]: https://travis-ci.org/razaqK/kor-redis
-[travis-image-url]: https://travis-ci.org/profile/razaqK/kor-redis.svg?branch=master
+[travis-image-url]: https://travis-ci.org/razaqK/kor-redis.svg?branch=master

@@ -19,7 +19,7 @@
     "url": "git@github.com:razaqK/kor-redis.git"
   },
   "author": "Razaq <abdrkasali@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "redis": "^2.8.0"
   }

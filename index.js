@@ -189,6 +189,4 @@ async function _processCommand(options) {
     })
 }
 
-
-
 module.exports = Redis;

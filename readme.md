@@ -35,7 +35,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 const Redis = require('kor-redis');
 const redis = new Redis('host', 'port', 'db');
 
-redis.command('set', ['test', 'testing command']);
+redis.command('set', ['key', 'value']);
 ```
 
 See Redis Commands here [Redis.io](https://redis.io/commands)

@@ -16,13 +16,29 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
    $ npm i --save kor-redis
 ```
 
+:rotating_light:
 ### New Features
+- Generic command function to run any redis command
+
+#### Features
 - Get remaining expiration time if set on key
 - Extend expiration time
 - Remove expiration (persist the redis key)
 - Rename redis key
 
 ### Usage: In NodeJS
+
+```diff
++ Added command method that allow the use of all redis commands.
+
+// Load pmodule
+const Redis = require('kor-redis');
+const redis = new Redis('host', 'port', 'db');
+
+redis.command('set', ['test', 'testing command']);
+```
+
+See Redis Commands here [Redis.io](https://redis.io/commands)
 
 ```
 // Load pmodule

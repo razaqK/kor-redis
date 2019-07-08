@@ -141,6 +141,17 @@ Redis.prototype.setExpiryTime = async function (key, time) {
     return await _processCommand.call(this, {name: 'expire', key: key, value: time});
 }
 
+
+/**
+ * @description expose method that allow performing operation using any redis command. see here https://redis.io/commands
+ * @param name
+ * @param args
+ * @returns {Promise<*>}
+ */
+Redis.prototype.command = async function (name, args) {
+    return await _runCommand.call(this, {command: name, args});
+};
+
 /**
  * @description process redis singleton commands
  * @param options
@@ -189,6 +200,32 @@ async function _processCommand(options) {
     })
 }
 
+/**
+ * @description this allow performing operation using any redis command. see here https://redis.io/commands
+ * @param command
+ * @param args
+ * @returns {Promise<any>}
+ * @private
+ */
+async function _runCommand({ command, args }) {
+    return await new Promise((resolve, reject) => {
+        if (!command || typeof command !== 'string' || !args || !Array.isArray(args)) {
+            resolve(false)
+        }
+
+        this.client[command](...args, function (err, key) {
+            try {
+                if (err) {
+                    return resolve(false)
+                }
+
+                return resolve(key === 'OK' ? true : key)
+            } catch (e) {
+                return resolve(false)
+            }
+        });
+    })
+};
 
 
 module.exports = Redis;

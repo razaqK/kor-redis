@@ -3,10 +3,9 @@ The `kor-redis` library exported as ```NodeJS``` module.
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build Status][travis-image-url]][travis-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/razaqK/kor-redis.svg)](https://greenkeeper.io/)
 
 # Installation
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/razaqK/kor-redis.svg)](https://greenkeeper.io/)
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
 [npm registry](https://www.npmjs.com/). Installation is done using the

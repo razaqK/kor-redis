@@ -21,6 +21,6 @@
   "author": "Razaq <abdrkasali@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "redis": "^3.0.0"
+    "redis": "^3.0.1"
   }
 }
